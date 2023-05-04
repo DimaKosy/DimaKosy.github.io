@@ -1,4 +1,9 @@
-p{
-    background: red;
-    background-color: red;
+:root{
+    --color-base: 255,255,255;
+
+    --color-base-rgb: rgb(var(--color-base));
+}
+
+body{
+    background: linear-gradient(#e66465, #9198e5);
 }
