@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $(document).on('click', '.element_button_class', function () {
+
+        console.log($(this).attr('id'));
+        
         $.ajax({
             url: './assets/html/FYP.html',
             method: 'GET',
