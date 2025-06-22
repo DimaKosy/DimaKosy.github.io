@@ -38,7 +38,13 @@ $(document).ready(function () {
             
             data.file.forEach(element => {
                 $('#project_buttons').append(
-                    `<button id=\"${element}\" class=\"element_button_class btn btn-sm btn-primary\" type=\"button\">${element}</button>`
+                    `<li id=\"${element}\" class=\"element_button_class btn btn-sm btn-primary\" type=\"button\">${element}</li>`
+                    `
+                    <li class="nav-item">
+                        <a id=\"${element} class="nav-link active">id=\"${element}
+                        </a>
+                    </li>
+                    `
                 );
             });
 
