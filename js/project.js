@@ -38,7 +38,7 @@ $(document).ready(function () {
             
             data.file.forEach(element => {
                 $('#project_buttons').append(
-                    `<button id=\"${element}\" class=\"element_button_class btn btn-lg btn-primary\" type=\"button\">${element}</button>`
+                    `<button id=\"${element}\" class=\"element_button_class btn btn-sm btn-primary\" type=\"button\">${element}</button>`
                 );
             });
 
