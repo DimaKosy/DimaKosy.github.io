@@ -1,0 +1,105 @@
+<div class="row">
+    <h5>Terrain Generation using a plate tectonics simulation</h5>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <a class="link" href="https://github.com/DimaKosy/TUD_FYP">Github</a>
+        <br>
+        <a href="./assets/Final Report C21376161.docx.pdf" download="Dmytro_Kosynskyy_FYP_Paper">Research Paper</a>
+        <br>
+        <p>
+            This was my final year project for my Computer Science degree. I chose to create world
+            generation system using tectonic plates as I felt that Perlin noise dominated everything and
+            I wanted to try something different.
+        </p>
+        <p>
+            This project took the entirety of my final year to complete as I had chosen to do everything
+            from scratch including collision detection.
+            This was written entirely in C++ and the only non standard library that was used was the
+            RayLib Graphics library as I felt that if I also chose to try and create my own graphics
+            framework on top of everything I'd lose all hope of being able to complete the project in
+            the timeframe.
+        </p>
+        <p>
+            Even without having to write my own graphics library, I still had a lot I needed to do,
+            including initial plate generation, collision detection, and deformation. With this project
+            I originally aimed for trying to create an infinitely generated procedural system for
+            continous tectonic simulation but due to time limitations it had to be limited to a fixed
+            size world that wrapped around on itself.
+        </p>
+        <p>
+            Despite all the challenges and obstacles I had to overcome I managed to make a fast and
+            efficient system that could generate terrain, albeit it had a lot of room to grow and
+            improve.
+        </p>
+        <table class="table table-bordered" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>amount of plates</th>
+                    <th>px size of world</th>
+                    <th>steps</th>
+                    <th>average simulation time (ms)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4x4</td>
+                    <td>2048x2048</td>
+                    <td>200</td>
+                    <td>553.06</td>
+                </tr>
+                <tr>
+                    <td>8x8</td>
+                    <td>1024x1024</td>
+                    <td>200</td>
+                    <td>1744.21</td>
+                </tr>
+                <tr>
+                    <td>4x4</td>
+                    <td>1024x1024</td>
+                    <td>100</td>
+                    <td>389.07</td>
+                </tr>
+                <tr>
+                    <td>4x4</td>
+                    <td>1024x1024</td>
+                    <td>200</td>
+                    <td>546.94</td>
+                </tr>
+                <tr>
+                    <td>4x4</td>
+                    <td>1024x1024</td>
+                    <td>300</td>
+                    <td>711.94</td>
+                </tr>
+                <tr>
+                    <td>4x4</td>
+                    <td>1024x1024</td>
+                    <td>400</td>
+                    <td>895.79</td>
+                </tr>
+                <tr>
+                    <td>4x4</td>
+                    <td>1024x1024</td>
+                    <td>500</td>
+                    <td>1059.77</td>
+                </tr>
+                <tr>
+                    <td>4x4</td>
+                    <td>1024x1024</td>
+                    <td>0</td>
+                    <td>158.00</td>
+                </tr>
+                <tr>
+                    <td>8x8</td>
+                    <td>1024x1024</td>
+                    <td>0</td>
+                    <td>243.43</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <img src="assets/FYP.png" alt="Final year project pdf" class="img-fluid rounded shadow"
+            style="overflow: hidden;">
+    </div>
+</div>
