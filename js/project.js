@@ -20,7 +20,7 @@ $(document).ready(function () {
             
             data.file.array.forEach(element => {
                 $('#project_buttons').html(
-                    "<button class=\"btn btn-lg btn-primary\" type=\"button\">AAAA;</button>"
+                    `<button class=\"btn btn-lg btn-primary\" type=\"button\">${element};</button>`
                 );
             });
 
