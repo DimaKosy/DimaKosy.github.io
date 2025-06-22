@@ -76,9 +76,19 @@
                 <div class="d-flex align-items-center gap-3">
         
                     <h4>Projects</h4>
-                    <div id="project_buttons" class="btn-group">
+                    <div class="d-block d-md-none dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Select Project
+                    </button>
+                    <ul id="dropdown_project_buttons" class="dropdown-menu" style="background-color: var(--bs-primary);">
+                        
+                    </ul>
+                    </div>
 
-                    </div>    
+                    
+                    <div id="project_buttons" class="btn-group d-none d-md-inline-flex">
+                    
+                    </div>
                     
                 </div>
             </nav>

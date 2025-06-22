@@ -38,7 +38,11 @@ $(document).ready(function () {
             
             data.file.forEach(element => {
                 $('#project_buttons').append(
-                    `<li id=\"${element}\" class=\"element_button_class btn btn-sm btn-primary\" type=\"button\">${element}</li>`
+                    `<li id=\"${element}\" class=\"element_button_class btn btn-md btn-primary\" type=\"button\">${element}</li>`
+                );
+
+                $('#dropdown_project_buttons').append(
+                    `<li id=\"${element}\" class=\"dropdown-item btn btn-primary\" type=\"button\">${element}</li>`
                 );
             });
 
