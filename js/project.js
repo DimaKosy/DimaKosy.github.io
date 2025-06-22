@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $(document).on('click', '.element_button_class', function () {
-
-        console.log($(this).attr('id'));
         
+        let id = $(this).attr('id');
+
         $.ajax({
-            url: './assets/html/FYP.html',
+            url: `./assets/html/${id}.html`,
             method: 'GET',
             dataType: 'html',
             success: function (data) {
@@ -38,7 +38,7 @@ $(document).ready(function () {
             
             data.file.forEach(element => {
                 $('#project_buttons').html(
-                    `<button id=\"${element}_button\" class=\"element_button_class btn btn-lg btn-primary\" type=\"button\">${element};</button>`
+                    `<button id=\"${element}\" class=\"element_button_class btn btn-lg btn-primary\" type=\"button\">${element}</button>`
                 );
             });
 
