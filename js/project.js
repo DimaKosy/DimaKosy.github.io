@@ -18,7 +18,11 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
             
-            console.log(data);
+            data.file.array.forEach(element => {
+                $('#project_buttons').html(
+                    "<button class=\"btn btn-lg btn-primary\" type=\"button\">AAAA;</button>"
+                );
+            });
 
         },
         error: function (error) {
