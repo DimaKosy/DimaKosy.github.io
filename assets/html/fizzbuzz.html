@@ -1,0 +1,39 @@
+<div class="row">
+    <h5>FizzBuzz</h5>
+    <div class="col-lg-8 col-md-12 col-sm-12">
+        <br>
+        <p>
+            And finally I want to present something that probably isn't the best code quality example, but I felt highlighted that I always love a challenge, this is FizzBuzz without using a single if or ternary operator.
+            By using an array to manipulate where a text is written we can change how it is written and what exactly is written.
+            <br>
+            <br>
+            This solution also only uses 7 lines of code and thats including the "include", and void main.
+        </p>
+        <pre class="bg-light p-3 rounded"><code class="text-monospace">#include <stdio.h>
+void main(){
+
+    char Out[9] = {'\0'}; // zero'd out array of characters
+
+    for(int i = 1; i <= 100; i++){
+        //Out[0] = '\0';
+        //Out[4] = '\0';
+
+        //converts the word "fizz" into an integer and then multiplies it by 1 if i is a modulo of 1 otherwises sets it to 0
+        *(int *)&Out[0] = !(i%3) * *(int *)"fizz",
+
+        //converts the word "buzz" into an integer and then multiplies it by 1 if i is a modulo of 5 otherwises sets it to 0
+        //if i is also a modulo of 3 it offsets the writing index of Out by 4 so buzz is written to the end of the line
+        *(int *)&Out[!(i%3)*4] = !(i%5) * *(int *)"buzz",
+
+        //prints it out but only prints out the number if the FizzBuzz isnt printed, otherwise it prints a 0 and deletes it
+        printf("%3d : %s%d%c \n", i, Out, !!(i%3) * !!(i%5) * i,(!(i%3) || !(i%5)) * '\b');
+    }
+}
+        </code></pre>
+    </div>
+
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <img src="assets/FizzBuzz.png" alt="Final year project pdf" class="img-fluid rounded shadow"
+            style="overflow: hidden;">
+    </div>
+</div>
